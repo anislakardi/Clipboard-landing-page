@@ -194,13 +194,13 @@ margin-top: 5%;
 }
 .footer-left p{
   padding-top: 20px;
-  padding-bottom:10px;
+  padding-bottom: 10px;
 }
 nav{
 bottom: 0;
 left: 0;
 width: 100%;
-height: 150px;
+height: 100%;
 box-sizing: border-box;
 background:#eaeaea;
 }
@@ -218,23 +218,21 @@ background:#eaeaea;
   margin-right: 5%;
   margin-bottom: 3%;
 }
-@media screen and (max-width: 400px ){
-  .midel{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 5%;
-    margin-bottom: 10px;
-  }
-  #i1,#m1,#m2,#i2{
-    display: block;
-    margin-left: 35%;
-    margin-bottom: 3%;
-  }
-  #logo1,#logo2,#logo3,#logo4,#logo5{
-    display: block;
-    margin:auto;
-    margin-bottom: 30%;
-  }
+.logo{
+  opacity: 1;
+  cursor: pointer;
+  border: 0;
+  margin: 40px;
+  padding:50px;
+  text-align: center;
+  margin-right: 40px;
+}
+.logos{
+  display: flex;
+  margin-right: 5%;
+  margin-bottom: 3%;
+}
+@media screen and (max-width: 414px ){
   #img1{
     border: 0px;
     float: none;
@@ -244,29 +242,68 @@ background:#eaeaea;
     width: 100%;;
     height: auto;
   }
- #t4,#t5,#t3,#p4,#p5,#p3,#a1,#a2{
-  text-align: center;
-  margin-left:  10% ;
-  margin-right: 10%;
-  padding-bottom: 10px;
-    align-items: center;
-  }
-  .footer-col{
-    flex-direction:column;
+  #t4,#t5,#t3,#p4,#p5,#p3,#a1,#a2{
     text-align: center;
-
-}
-.footer-left{
-    flex-direction: column;
-
-}
-.footer-right img{
-    width:30px;
-    margin:0;
-}
-nav{
-  height: 600px;
+    margin-left:  10% ;
+    margin-right: 10%;
+    padding-bottom: 20px;
+      align-items: center;
+    }
+    .footer-col{
+      flex-direction:column;
+      text-align: center;
+  
   }
+  .footer-left{
+      flex-direction: column;
+  
+  }
+  .footer-right img{
+      width:30px;
+      margin:0;
+  }
+  nav{
+    height: 100%;
+    }
+    #i1,#m1,#m2,#i2{
+      display: block;
+      margin-left: 35%;
+      margin-bottom: 3%;
+    }
+    .item{
+      opacity: 1;
+      cursor: pointer;
+      border: 0;
+      margin: 40px;
+      padding:50px;
+      text-align: center;
+      margin-right: 40px;
+    }
+    .midel{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-right: 5%;
+      margin-bottom: 3%;
+    }
+    .logo{
+      opacity: 1;
+      cursor: pointer;
+      border: 0;
+      margin: 40px;
+      padding:50px;
+      text-align: center;
+      margin-right: 40px;
+    }
+    .logos{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-right: 5%;
+      margin-bottom: 3%;
+    }
 
 
 }
